@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Explorer | Class 11</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#070b18;color:#eef2ff;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 15%,#5b5cff22,transparent 30%),radial-gradient(circle at 85% 30%,#00d9ff18,transparent 28%);z-index:-1}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:16px 7%;background:#080c19dd;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+.logo{font-weight:800;font-size:22px}.logo span{color:#7c7cff}
+nav a{color:#cbd2ee;text-decoration:none;margin-left:22px;font-size:14px}
+nav a:hover{color:white}
+.hero{min-height:86vh;display:grid;place-items:center;text-align:center;padding:70px 8%;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;animation:float 6s ease-in-out infinite}
+.o1{width:180px;height:180px;background:#655cff55;left:8%;top:22%}.o2{width:130px;height:130px;background:#00d9ff44;right:10%;bottom:18%;animation-delay:1s}
+@keyframes float{50%{transform:translateY(-22px) scale(1.06)}}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #ffffff20;border-radius:30px;background:#ffffff08;color:#aeb8d9;font-size:13px;margin-bottom:20px}
+.hero h1{font-size:clamp(48px,9vw,88px);line-height:1.02;letter-spacing:-4px;background:linear-gradient(90deg,#fff,#9da1ff,#66e6ff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:700px;margin:22px auto;color:#aeb8d0;font-size:18px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;text-decoration:none;color:#fff;background:linear-gradient(90deg,#625cff,#00bfe8);font-weight:700;box-shadow:0 12px 35px #5f5cff35}
+section{padding:75px 8%;max-width:1150px;margin:auto}
+.title{text-align:center;margin-bottom:35px}.title h2{font-size:36px}.title p{color:#9da7c4}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{padding:25px;border-radius:18px;background:linear-gradient(145deg,#11182d,#0b1020);border:1px solid #ffffff12;box-shadow:0 15px 40px #0005;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:#7774ff66}
+.icon{font-size:34px;margin-bottom:10px}.card h3{margin-bottom:8px}.card p,.card li{color:#aeb8d0}
+.card ul{padding-left:20px}
+.timeline{display:grid;gap:14px}.step{display:flex;gap:18px;align-items:flex-start;padding:20px;border-left:3px solid #716cff;background:#ffffff06;border-radius:0 14px 14px 0}
+.num{min-width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:#716cff;font-weight:800}
+.quiz{max-width:720px;margin:auto;padding:30px;background:#10172a;border:1px solid #ffffff14;border-radius:20px}
+.quiz label{display:block;padding:9px;color:#cbd2e8}.quiz button{margin-top:15px;border:0;padding:11px 18px;border-radius:9px;background:#716cff;color:white;font-weight:700;cursor:pointer}
+#result{margin-top:15px}
+footer{text-align:center;padding:30px;color:#8993af;border-top:1px solid #ffffff12}
+@media(max-width:700px){nav .links{display:none}.hero h1{letter-spacing:-2px}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">✦ AI<span>Explorer</span></div>
+<div class="links">
+<a href="#learn">Learn</a><a href="#uses">Uses</a><a href="#roadmap">Roadmap</a><a href="#quiz">Quiz</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="orb o1"></div><div class="orb o2"></div>
+<div>
+<div class="badge">CLASS 11 • BEGINNER FRIENDLY</div>
+<h1>Explore the<br>World of AI</h1>
+<p>Learn Artificial Intelligence in a simple and fascinating way — from basic ideas to real-world applications and future careers.</p>
+<a class="btn" href="#learn">Start Exploring →</a><p style="margin-top:22px;font-size:15px;color:#c8d0e8">Created by <b style="color:#ffffff">Manahil Yousuf</b></p>
+</div>
+</header>
+
+<section id="learn">
+<div class="title"><h2>🧠 AI Made Simple</h2><p>Understand the important concepts without complicated words.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🤖</div><h3>What is AI?</h3><p>AI is technology that helps computers perform tasks that normally need human intelligence, such as learning, recognizing patterns and understanding language.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Machine Learning</h3><p>A part of AI where computers learn patterns from data and use those patterns to make useful predictions or decisions.</p></div>
+<div class="card"><div class="icon">💬</div><h3>Natural Language</h3><p>AI can process human language. Chatbots and voice assistants are common examples.</p></div>
+<div class="card"><div class="icon">👁️</div><h3>Computer Vision</h3><p>AI can analyze pictures and videos to identify objects, faces, text and other information.</p></div>
+</div>
+</section>
+
+<section id="uses">
+<div class="title"><h2>🌍 AI Around Us</h2><p>AI is already part of many everyday technologies.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🎓</div><h3>Education</h3><p>Study assistants, personalized learning and educational tools.</p></div>
+<div class="card"><div class="icon">🏥</div><h3>Healthcare</h3><p>AI can support medical research and help analyze large amounts of information.</p></div>
+<div class="card"><div class="icon">🎬</div><h3>Entertainment</h3><p>Recommendations for movies, music, games and other content.</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Transport</h3><p>Navigation, traffic prediction and driver-assistance technologies.</p></div>
+</div>
+</section>
+
+<section>
+<div class="title"><h2>⚡ Benefits & Responsibilities</h2></div>
+<div class="grid">
+<div class="card"><h3>✨ Benefits</h3><ul><li>Automates repetitive work</li><li>Processes large amounts of data quickly</li><li>Supports learning and research</li><li>Helps solve complex problems</li></ul></div>
+<div class="card"><h3>🛡️ Responsible AI</h3><ul><li>Check information before trusting it</li><li>Protect personal information</li><li>Think about fairness and bias</li><li>Keep humans involved in important decisions</li></ul></div>
+</div>
+</section>
+
+<section id="roadmap">
+<div class="title"><h2>🚀 Class 11 AI Roadmap</h2><p>A simple path for beginners.</p></div>
+<div class="timeline">
+<div class="step"><div class="num">1</div><div><h3>Computer Basics</h3><p>Understand computers, the internet, data and basic problem-solving.</p></div></div>
+<div class="step"><div class="num">2</div><div><h3>Learn Python</h3><p>Start with variables, conditions, loops, functions and simple projects.</p></div></div>
+<div class="step"><div class="num">3</div><div><h3>Explore Data</h3><p>Learn how data is collected, organized and used by AI systems.</p></div></div>
+<div class="step"><div class="num">4</div><div><h3>Build Small Projects</h3><p>Practice with beginner projects and gradually explore machine learning.</p></div></div>
+</div>
+</section>
+
+<section>
+<div class="title"><h2>💼 Future Career Areas</h2><p>AI connects with many exciting fields.</p></div>
+<div class="grid">
+<div class="card"><h3>AI Engineer</h3><p>Builds and works with AI systems.</p></div>
+<div class="card"><h3>Data Scientist</h3><p>Uses data, statistics and computing to find useful insights.</p></div>
+<div class="card"><h3>Robotics</h3><p>Combines AI, programming and machines.</p></div>
+<div class="card"><h3>Cybersecurity</h3><p>Uses intelligent tools to help protect digital systems.</p></div>
+</div>
+</section>
+
+<section id="quiz">
+<div class="title"><h2>🎯 Quick AI Quiz</h2><p>Test what you learned.</p></div>
+<div class="quiz">
+<p><b>What does AI stand for?</b></p>
+<label><input type="radio" name="q" value="wrong"> Automated Internet</label>
+<label><input type="radio" name="q" value="correct"> Artificial Intelligence</label>
+<label><input type="radio" name="q" value="wrong"> Advanced Information</label>
+<button onclick="check()">Check Answer</button>
+<p id="result"></p>
+</div>
+</section>
+
+<footer>✦ AI Explorer • A simple learning website for Class 11 students • Created by Manahil Yousuf</footer>
+
+<script>
+function check(){
+ const a=document.querySelector('input[name="q"]:checked');
+ const r=document.getElementById('result');
+ if(!a){r.textContent="Please choose an answer.";return}
+ r.textContent=a.value==="correct"?"🎉 Correct! Great job!":"💡 Not quite. Try again!";
+}
+</script>
+</body>
+</html>
